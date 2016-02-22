@@ -4,13 +4,13 @@
 */
 
 // Custom Fields
-$prelaunch_price = get_post_meta(16, 'prelaunch_price', true);
-$launch_price = get_post_meta(16, 'launch_price', true);
-$final_price = get_post_meta(16, 'final_price', true);
-$course_url = get_post_meta(16, 'course_url', true);
-$button_text = get_post_meta(16, 'button_text', true);
-$optin_text = get_post_meta(16, 'optin_text', true);
-$optin_button_text = get_post_meta(16, 'optin_button_text', true);
+$prelaunch_price = get_post_meta(9, 'prelaunch_price', true);
+$launch_price = get_post_meta(9, 'launch_price', true);
+$final_price = get_post_meta(9, 'final_price', true);
+$course_url = get_post_meta(9, 'course_url', true);
+$button_text = get_post_meta(9, 'button_text', true);
+$optin_text = get_post_meta(9, 'optin_text', true);
+$optin_button_text = get_post_meta(9, 'optin_button_text', true);
 
 // Advanced Custom Fields
 $income_feature_image = get_field('income_feature_image');
