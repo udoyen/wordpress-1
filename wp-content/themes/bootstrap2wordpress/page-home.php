@@ -140,7 +140,7 @@ get_header(); ?>
     <div class="section-header">
       <!-- If user uploaded an image -->
       <?Php if(!empty($income_feature_image) ) : ?>
-        <img src="<?php echo $income_feature_image['url']; ?>/assets/img/icon-boost.png" alt="Chart" />
+        <img src="<?php echo $income_feature_image['url']; ?>" alt="<?php echo $income_feature_image['alt'];?>" />
     <?php endif; ?>
 
       <h2>How You Can Boost Your Income</h2>
