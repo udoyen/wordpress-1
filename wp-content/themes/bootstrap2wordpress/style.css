@@ -1045,7 +1045,7 @@ button[type="submit"]:hover {
     }
 
 		#wpadminbar #wp-admin-bar-wp-logo > .ab-item .ab-icon::before {
-		    top: 8px !important;
+		    top: -2px !important;
 		}
 			
 
