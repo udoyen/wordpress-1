@@ -226,12 +226,12 @@ get_header(); ?>
       <!-- end col -->
       <div class="col-sm-2">
         <i class="ci ci-calendar"></i>
-        <h4>30-day money back gusrantee</h4>
+        <h4>30-day money back guarantee</h4>
       </div>
       <!-- end col -->
       <div class="col-sm-2">
         <i class="ci ci-cummunity"></i>
-        <h4>Access to a cummuity of like-minded students</h4>
+        <h4>Access to a community of like-minded students</h4>
       </div>
       <!-- end col -->
       <div class="col-sm-2">
