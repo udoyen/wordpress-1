@@ -1,0 +1,29 @@
+<?php
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+$video_title = get_field( 'video_title' );
+$video_url = get_field( 'video_url' );
+
+?>
+
+<!-- VIDEO FEATURETTE ===================================== -->
+<section id="featurette">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<h2><?php echo $video_title; ?></h2>
+				<iframe width="100%" height="415" src="<?php echo $video_url; ?>" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<!-- end col -->
+		</div>
+		<!-- row -->
+	</div>
+	<!-- container -->
+
+</section>
+<!-- featurette -->
