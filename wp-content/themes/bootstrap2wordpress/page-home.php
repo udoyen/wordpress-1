@@ -32,6 +32,9 @@ $features_section_body = get_field( 'features_section_body' );
 $project_feature_title = get_field( 'project_feature_title' );
 $project_feature_body = get_field( 'project_feature_body' );
 
+$video_title = get_field('video_title');
+$video_url = get_field('video_url');
+
 get_header();
 ?>
 
@@ -292,8 +295,8 @@ get_header();
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
-				<h2>Watch the Course Introduction</h2>
-				<iframe width="100%" height="415" src="https://www.youtube.com/embed/q-mJJsnOHew" frameborder="0" allowfullscreen></iframe>
+				<h2><?php echo $video_title; ?></h2>
+				<iframe width="100%" height="415" src="<?php echo $video_url; ?>" frameborder="0" allowfullscreen></iframe>
 			</div>
 			<!-- end col -->
 		</div>
