@@ -32,19 +32,19 @@ $features_section_body = get_field( 'features_section_body' );
 $project_feature_title = get_field( 'project_feature_title' );
 $project_feature_body = get_field( 'project_feature_body' );
 
-$video_title = get_field('video_title');
-$video_url = get_field('video_url');
+$video_title = get_field( 'video_title' );
+$video_url = get_field( 'video_url' );
 
-$instructor_section_title = get_field('instructor_section_title');
-$instructor_name = get_field('instructor_name');
-$bio_except = get_field('bio_except');
-$full_bio = get_field('full_bio');
-$twitter_username = get_field('twitter_username');
-$facebook_username = get_field('facebook_username');
-$google_plus_username = get_field('google_plus_username');
-$num_students = get_field('num_students');
-$num_reviews = get_field('num_reviews');
-$num_courses = get_field('num_courses');
+$instructor_section_title = get_field( 'instructor_section_title' );
+$instructor_name = get_field( 'instructor_name' );
+$bio_except = get_field( 'bio_except' );
+$full_bio = get_field( 'full_bio' );
+$twitter_username = get_field( 'twitter_username' );
+$facebook_username = get_field( 'facebook_username' );
+$google_plus_username = get_field( 'google_plus_username' );
+$num_students = get_field( 'num_students' );
+$num_reviews = get_field( 'num_reviews' );
+$num_courses = get_field( 'num_courses' );
 
 get_header();
 ?>
@@ -277,22 +277,20 @@ get_header();
 
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<div class="col-sm-4">
-					
-					<?php 
-						if(  has_post_thumbnail()){
-							the_post_thumbnail();
-						}
-					
-					
+
+					<?php
+					if ( has_post_thumbnail() ) {
+						the_post_thumbnail();
+					}
 					?>					
-					
+
 					<h3><?php the_title(); ?></h3>
 					<p>
 						<?php the_content(); ?>
 					</p>
 				</div>
 			<?php endwhile; ?>
-			
+
 		</div>
 		<!-- row -->
 	</div>
@@ -329,19 +327,19 @@ get_header();
 					</div>
 					<!-- end col -->
 					<div class="col-lg-4">
-						
-						<?php if(!empty($twitter_username)):  ?>
-						<a href="https://twitter.com/<?php echo $twitter_username; ?>" class="badge social twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+
+						<?php if ( !empty( $twitter_username ) ): ?>
+							<a href="https://twitter.com/<?php echo $twitter_username; ?>" class="badge social twitter" target="_blank"><i class="fa fa-twitter"></i></a>
 						<?php endif; ?>
-						
-						<?php if(!empty($facebook_username)):  ?>
-						<a href="https://facebook.com/<?php echo $facebook_username; ?>" class="badge social facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+
+						<?php if ( !empty( $facebook_username ) ): ?>
+							<a href="https://facebook.com/<?php echo $facebook_username; ?>" class="badge social facebook" target="_blank"><i class="fa fa-facebook"></i></a>
 						<?php endif; ?>
-						
-						<?php if(!empty($google_plus_username)):  ?>
-						<a href="https://plus.google.com/<?php echo $google_plus_username; ?>" class="badge social gplus" target="_blank"><i class="fa fa-google-plus"></i></a>
+
+						<?php if ( !empty( $google_plus_username ) ): ?>
+							<a href="https://plus.google.com/<?php echo $google_plus_username; ?>" class="badge social gplus" target="_blank"><i class="fa fa-google-plus"></i></a>
 						<?php endif; ?>
-						
+
 					</div>
 					<!-- end col -->
 				</div>
@@ -403,67 +401,32 @@ get_header();
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
 				<h2>What People Are Saying About Brad</h2>
-				<!-- Testimonial -->
-				<div class="row testimonial">
-					<div class="col-sm-4">
-						<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/img/brennan.jpg" alt="Brennan">
-					</div><!-- end col -->
-					<div class="col-sm-8">
-						<blockquote>
-							These videos are well created, concise, fast-paced, easy to follow, and just funny enough to keep
-							you chuckling as you&rsquo;re slamming out lines of code. I&rsquo;ve taken 3 courses from
-							this instructor. Whenever I have questions he is right there
-							with a simple solution or a helpful suggestion to keep me
-							going forward with the course work.
-							<cite>&mdash; Brennan, graduate of all Brad's courses</cite>
-						</blockquote>
-					</div><!-- end col -->
-				</div><!-- row -->
 
-				<!-- Testimonial -->
-				<div class="row testimonial">
-					<div class="col-sm-4">
-						<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/img/ben.png" alt="Illustration of a man with a moustache">
-					</div><!-- end col -->
-					<div class="col-sm-8">
-						<blockquote>
-							I found Brad to be a great teacher, and a very inspiring
-							person. It's clear he is very passionate about helping designers learn
-							to code, and I look forward to more courses from him!
-							<cite>&mdash; Ben, graduate of Build a Website from Scratch with HTML &amp; CSS</cite>
-						</blockquote>
-					</div><!-- end col -->
-				</div><!-- row -->
+				<?php
+				$loop = new WP_Query( array( 'post_type' => 'testimonial', 'orderby' => 'post_id',
+					'order' => 'ASC' ) );
+				?>
 
-				<!-- Testimonial -->
-				<div class="row testimonial">
-					<div class="col-sm-4">
-						<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/img/aj.png" alt="Illustration of a man with a beard">
-					</div><!-- end col -->
-					<div class="col-sm-8">
-						<blockquote>
-							Brad is amazing and I honestly think he&rsquo;s the best tutor of all the courses
-							I have taken on Udemy. Will definitely be following him in the future. Thanks Brad!
-							<cite>&mdash; Aj, graduate of Code a Responsive Website with Bootstrap 3</cite>
-						</blockquote>
-					</div><!-- end col -->
-				</div><!-- row -->
+				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+					<!-- Testimonial -->
+					<div class="row testimonial">
+						<div class="col-sm-4">
 
-				<!-- Testimonial -->
-				<div class="row testimonial">
-					<div class="col-sm-4">
-						<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/img/ernest.png" alt="Illustration of a man with a goatee">
-					</div><!-- end col -->
-					<div class="col-sm-8">
-						<blockquote>
-							Brad is an excellent instructor. His content is super high quality, and yuo can see the love and care
-							put into every section. The tutorials are the perfect length, and you feel like your doing semething
-							right out the gate! I really can't beleive this is free. I highly recommend taking advantage of this
-							course.
-							<cite>&mdash; Ernest, graduate of Code Dynamic Websites with PHP</cite>
-						</blockquote>
-					</div><!-- end col -->
-				</div><!-- row -->
+							<?php
+							if ( has_post_thumbnail() ) { // check for feature image
+								the_post_thumbnail( array( 200, 200 ) );
+							}
+							?>						
+						</div><!-- end col -->
+						<div class="col-sm-8">
+							<blockquote>
+								<?php the_content(); ?>
+								<cite>&mdash; <?php the_title(); ?></cite>
+							</blockquote>
+						</div><!-- end col -->
+					</div><!-- row -->
+				<?php endwhile; ?>
+
 			</div><!-- end col -->
 		</div><!-- row -->
 	</div><!-- container -->
