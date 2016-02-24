@@ -1,5 +1,5 @@
 <?php
-
+//
 $instructor_section_title = get_field( 'instructor_section_title' );
 $instructor_name = get_field( 'instructor_name' );
 $bio_except = get_field( 'bio_except' );
@@ -10,7 +10,6 @@ $google_plus_username = get_field( 'google_plus_username' );
 $num_students = get_field( 'num_students' );
 $num_reviews = get_field( 'num_reviews' );
 $num_courses = get_field( 'num_courses' );
-
 ?>
 
 <!-- INSTRUCTOR ==================================== -->

@@ -1,8 +1,6 @@
 <?php
-
 $video_title = get_field( 'video_title' );
 $video_url = get_field( 'video_url' );
-
 ?>
 
 <!-- VIDEO FEATURETTE ===================================== -->

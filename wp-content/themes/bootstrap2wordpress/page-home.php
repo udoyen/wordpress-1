@@ -63,7 +63,6 @@ get_header();
 
 <?php get_template_part('content', 'videofeaturette'); ?>
 
-
 <?php get_template_part('content', 'instructor'); ?>
 
 <?php get_template_part('content', 'testimonial'); ?>
