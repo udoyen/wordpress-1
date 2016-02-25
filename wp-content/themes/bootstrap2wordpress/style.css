@@ -927,6 +927,20 @@ footer li.signup-link a:hover {
 
 }
 
+/* specific wordpress comment styles */
+#comments footer{
+    background: none;
+    color: inherit;
+}
+
+#comments footer a{
+    color: inherit;
+}
+
+#comments .comment-metadata{
+    margin: 10px 0 0;
+}
+
 /* ==== RESOURCES === */
 
 .resource {
@@ -1018,6 +1032,7 @@ button[type="submit"] {
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
+        background: #d9d9d9;
 }
 
 input[type="submit"]:hover,
