@@ -31,7 +31,7 @@ get_header();
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active"><a href="/" class="active">home</a></li>
 						<li><a href="blog.html">Blog</a></li>
-						<li><a href="resources.html">Resources</a></li>
+						<li><a href="resources">Resources</a></li>
 						<li><a href="contact.html">Contact</a></li>
 
 					</ul>
