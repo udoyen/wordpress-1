@@ -398,6 +398,7 @@ h1 {
 
 }
 
+
 h1, h2 {
 	margin: 0 0 40px;
 }
@@ -1107,4 +1108,21 @@ button[type="submit"]:hover {
 		margin-right: 0;
 		min-height: 0;
 	}
+}
+
+
+/* =========== ARCHIVE ============= */
+
+
+section.feature-image{
+    text-align: center;
+}
+h1.page-title{    
+    display: inline-block;
+}
+
+h1.page-title + small{
+    color: white;
+    font-size: 1.4em;
+    word-spacing: 0.001em;
 }
