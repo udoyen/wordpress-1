@@ -32,7 +32,7 @@ get_header();
 						<li class="active"><a href="/" class="active">home</a></li>
 						<li><a href="blog">Blog</a></li>
 						<li><a href="resources">Resources</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="contact">Contact</a></li>
 
 					</ul>
 					<!-- nav -->
