@@ -60,7 +60,7 @@ get_header();
 		<!-- SIDEBAR
 		================================================== -->
 		<aside class="col-sm-4">
-			<?php get_sidebar(); ?>
+			<?php get_sidebar(); ?>			
 		</aside><!-- col aside -->
 	</div><!-- primary -->
 </div><!-- container -->
