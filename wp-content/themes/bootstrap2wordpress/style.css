@@ -1116,9 +1116,11 @@ button[type="submit"]:hover {
 
 section.feature-image{
     text-align: center;
+    
 }
 h1.page-title{    
     display: inline-block;
+    line-height: 0.01em;
 }
 
 h1.page-title + small{
