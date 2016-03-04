@@ -107,7 +107,8 @@ function bootstrap2wordpress_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-}
+	
+	}
 add_action( 'widgets_init', 'bootstrap2wordpress_widgets_init' );
 
 /**
@@ -150,3 +151,14 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+/*
+ * Replace the except "more" text by a link.
+ */
+function new_excerpt_more($more){
+	global $post;
+	return '... <a class="moretag" href="'. get_permalink($post->ID) . '"> continue reading &raquo;</a>';
+}
+
+add_filter('excerpt_more', 'new_excerpt_more');
