@@ -65,12 +65,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 ## Menus
 --------------------------------------------------------------*/
 
-
-.navbar-nav > li.current_page_item a,
-.navbar-nav > li.current_page_parent a{
-    color:white;
-}
-
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -403,7 +397,6 @@ h1 {
 	font-size: 3em;
 
 }
-
 
 h1, h2 {
 	margin: 0 0 40px;
@@ -813,7 +806,7 @@ footer li.signup-link a:hover {
 
 }
 
-.post-image img {
+.post-image {
 	height: auto;
 
 }
@@ -934,20 +927,6 @@ footer li.signup-link a:hover {
 
 }
 
-/* specific wordpress comment styles */
-#comments footer{
-    background: none;
-    color: inherit;
-}
-
-#comments footer a{
-    color: inherit;
-}
-
-#comments .comment-metadata{
-    margin: 10px 0 0;
-}
-
 /* ==== RESOURCES === */
 
 .resource {
@@ -1039,7 +1018,6 @@ button[type="submit"] {
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
-        background: #d9d9d9;
 }
 
 input[type="submit"]:hover,
@@ -1067,7 +1045,7 @@ button[type="submit"]:hover {
     }
 
 		#wpadminbar #wp-admin-bar-wp-logo > .ab-item .ab-icon::before {
-		    top: -2px !important;
+		    top: 8px !important;
 		}
 			
 
@@ -1114,33 +1092,4 @@ button[type="submit"]:hover {
 		margin-right: 0;
 		min-height: 0;
 	}
-}
-
-
-/* =========== ARCHIVE ============= */
-
-
-section.feature-image{
-    text-align: center;
-    
-}
-h1.page-title{    
-    display: inline-block;
-    line-height: 0.01em;
-}
-
-h1.page-title + small{
-    color: white;
-    font-size: 1.4em;
-    word-spacing: 0.001em;
-}
-
-/* ===================== WIDGETS ================= */
-
-
-aside > aside#secondary.widget-area h2 {
-    font-size: 1.2em !important;
-    margin: 0 0 10px;
-    padding: 0 0 10px;
-    border-bottom: solid 1px #ddd;
 }

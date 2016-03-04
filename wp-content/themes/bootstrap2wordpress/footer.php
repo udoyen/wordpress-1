@@ -29,7 +29,7 @@
 <footer id="footer">
 	<div class="container">
 		<div class="col-sm-3">
-			<p><a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" alt="Bootstrap to Wordpress"></a></p>
+			<p><a href="/"><img src="assets/img/logo.png" alt="Bootstrap to Wordpress"></a></p>
 		</div><!-- end col -->
 		<div class="col-sm-6">
 			<nav>
