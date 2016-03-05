@@ -7,8 +7,8 @@
  */
 
 
-$optin_text = get_post_meta( 9, 'optin_text', true );
-$optin_button_text = get_post_meta( 9, 'optin_button_text', true );
+$optin_text = get_post_meta( 25, 'optin_text', true );
+$optin_button_text = get_post_meta( 25, 'optin_button_text', true );
 
 ?>
 
