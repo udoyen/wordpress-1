@@ -46,6 +46,9 @@ function bootstrap2wordpress_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'bootstrap2wordpress' ),
 	) );
+	register_nav_menus( array(
+		'footer' => esc_html__( 'Footer Menu', 'bootstrap2wordpress' ),
+	) );
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
