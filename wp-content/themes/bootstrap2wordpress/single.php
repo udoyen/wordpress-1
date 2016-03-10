@@ -38,7 +38,7 @@ get_header(); ?>
 		
 		<!-- SECTION TITLE ========================= -->
 		<aside class="col-sm-4">
-			<?php get_sidebar() ?>
+			<?php get_sidebar(); ?>
 		</aside>
 	</div><!-- #primary -->
 	</div><!-- .container -->
